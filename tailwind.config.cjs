@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{svelte,html}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+         azul: '#1877F2',
+         verde: '#36A420',
+      }
+    },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms'),require('@tailwindcss/line-clamp'),require('@tailwindcss/typography'),require('@tailwindcss/scrollbar')],
 }
