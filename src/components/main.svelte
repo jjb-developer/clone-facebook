@@ -35,12 +35,14 @@
       <section class='w-[30%]'>amigos</section>
       <section class='w-[40%] h-screen'>
          <div class='w-[90%] h-[90%] bg-slate-100 mx-auto my-5 rounded-xl flex-center'>
+         {#if data.rows}
             <div class='flex gap-x-4'>
             {#each data.rows as d}
             <span>{ d.title }</span>
             <span>{ d.author }</span>
             {/each}
             </div>
+         {/if}
          </div>
       </section>
       <section class='w-[30%]'>publicidad</section>
